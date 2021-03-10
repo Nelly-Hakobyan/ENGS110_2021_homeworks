@@ -16,14 +16,14 @@ def countsum(number):
 
    
 def primeNumber(number):
-    p = int(number**0.5)
-    for i in range (2, (p + 1)):
+    for i in range (2, number):
         if number % i == 0:
             print ("not prime")
-            return False
-
+            break
+    else:
         print ("prime")
-        return True 
+
+
                   
             
 
