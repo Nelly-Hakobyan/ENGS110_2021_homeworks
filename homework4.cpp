@@ -1,12 +1,10 @@
-#include <iostream>
-#include <math.h>
-using namespace std;
+#include <stdio.h>
 int main ()
 {
-	int n1=0, i, n2=1, n3, sum=0, age, a[100];
-	cout<<"enter your age ";
-	cin>>age;
-	while (n1<age)
+	int n1=0, n2=1, sum=0, n3, age, i, a[100];
+	printf("Enter your age: ");
+	scanf("%d",&age);
+	while (n1 < age)
 	{
 		n3=n1+n2;
 		n1=n2;
@@ -14,19 +12,19 @@ int main ()
 		n2=n3;
 	}
 	sum=sum-n1;
-	cout<<"sum of all fibonacci numbers less than your age is "<<sum<<endl;
+	printf("sum of all fibonacci numbers less than your age is: %d",sum);
 	for (i=0; sum>=1; i++)
 	{
 		a[i]=sum%2;
 		sum = sum/2;
 	}	
-	cout<<"binary representation of sum is ";
+	printf("\nbinary representation of sum is: ");
 	for (i=i-1; i>=0; i--)
 	{
 	
-	      cout<<a[i];
+	      printf("%d", a[i]);
 	}      
-	cout<<endl;
+	printf("\n");
 	return sum;
 }
 
