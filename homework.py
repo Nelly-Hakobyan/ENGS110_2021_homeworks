@@ -10,13 +10,13 @@ def countsum(number):
             k = a1 + a2
             a1 = a2
             a2 = k
-        print(sum)
+    print(sum)
 
        
 
    
 def primeNumber(number):
-    for i in range (2, number):
+    for i in range (2, (number**0.5)):
         if number % i == 0:
             print ("not prime")
             break
